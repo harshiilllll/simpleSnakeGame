@@ -1,6 +1,6 @@
 <title> simpleSnake.io </title>
 
-<body style="display: flex; align-items: center; justify-content: center; height: 100vh">
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh; overflow: hidden;">
 <canvas id="gc" width="400" height="400"></canvas>
 
 <script>
@@ -42,6 +42,7 @@ function game() {
 		ctx.fillRect(trail[i].x*gs, trail[i].y*gs, gs-2, gs-2);	
 		if (trail[i].x==px && trail[i].y==py) {
 			tail=3;
+			alert(tail);
 		}
 	}
 
